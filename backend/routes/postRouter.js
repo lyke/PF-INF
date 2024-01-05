@@ -9,6 +9,6 @@ const router = express.Router()
 
 const controller = require('../controllers/postController')
 
-router.get('/talents/:id/posts', controller.getAll)
+router.get('/posts', controller.getAll)
 
 module.exports = router
