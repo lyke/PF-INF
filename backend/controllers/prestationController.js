@@ -8,7 +8,7 @@ let db = require("../configs/prestationgresql"),
     sequelize = db.sequelize,
     Sequelize = db.Sequelize
 
-const prestationService = require('../services/prestationService')
+const prestationService = require('../services/prestationService.js')
 
 const prestationController = {}
 
