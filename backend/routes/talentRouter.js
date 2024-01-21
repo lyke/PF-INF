@@ -7,8 +7,11 @@
 const express = require('express')
 const router = express.Router()
 
-const controller = require('../controllers/talentController')
+const talentController = require('../controllers/talentController')
+const postController = require('../controllers/postController')
 
-router.get('/talents', controller.getAll)
+router.get('/posts', postController.getAll)
+
+router.get('/talents', talentController.getAll)
 
 module.exports = router

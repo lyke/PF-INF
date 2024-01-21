@@ -10,6 +10,7 @@ module.exports = {
       [
         {
           id: 1,
+          object: 'First Message',
           description: 'This is the first message',
           mail: 'message1@example.com',
           talentId: 1,
@@ -18,16 +19,18 @@ module.exports = {
         },
         {
           id: 2,
+          object: 'Second Message',
           description: 'This is the second message',
-          image: 'message2@example.com',
+          mail: 'message2@example.com',
           talentId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
           id: 3,
+          object: 'Third Message',
           description: 'This is the third message',
-          image: 'message3@example.com',
+          mail: 'message3@example.com',
           talentId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
