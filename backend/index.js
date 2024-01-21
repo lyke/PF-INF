@@ -19,8 +19,7 @@ const createError = require('http-errors')
 const express = require('express')
 const path = require('path')
 const PORT = 3000;
-var talentRouter = require('./routes/talentRouter')
-var messageRouter = require('./routes/messageRouter')
+var router = require('./routes/indexRouter')
 const message = require('./database/models/message')
 
 
@@ -33,8 +32,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-app.use('/api/', talentRouter)
-app.use('/api/', messageRouter)
+app.use('/api/', router)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

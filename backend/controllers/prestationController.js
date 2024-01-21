@@ -4,7 +4,7 @@
 
 'use strict'
 
-let db = require("../configs/prestationgresql"),
+let db = require("../configs/postgresql"),
     sequelize = db.sequelize,
     Sequelize = db.Sequelize
 
