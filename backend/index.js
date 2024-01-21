@@ -20,6 +20,8 @@ const express = require('express')
 const path = require('path')
 const PORT = 3000;
 var talentRouter = require('./routes/talentRouter')
+var messageRouter = require('./routes/messageRouter')
+const message = require('./database/models/message')
 
 
 const app = express()
@@ -32,6 +34,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/', talentRouter)
+app.use('/api/', messageRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
