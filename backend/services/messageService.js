@@ -1,4 +1,3 @@
-g
 /**
  * Message Service
  */

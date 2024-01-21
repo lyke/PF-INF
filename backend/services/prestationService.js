@@ -4,7 +4,7 @@
 
 'use strict'
 
-const db = require('../configs/prestationgresql')
+const db = require('../configs/postgresql')
 const models = require("../database/models")
 
 const prestationService = {}
