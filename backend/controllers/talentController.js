@@ -85,16 +85,5 @@ talentController.login = async (req, res) => {
             })
         })
 }
-talentController.logout = async (req, res) => {
-    talentService.logout(req.body)
-        .then(data => {
-            res.json(data)
-        })
-        .catch(err => {
-            res.status(404).send({
-                message: err.message || 'Some error occurred while retrieving data.'
-            })
-        })
-}
 
 module.exports = talentController

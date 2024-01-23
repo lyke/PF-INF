@@ -30,5 +30,27 @@ talentService.getById = async (id) => {
 talentService.create = async (data) => {
     return models.Talent.create(data)
 }
+talentService.update = async (id, data) => {
+    return models.Talent.update(data, {
+        where: {
+            id: id
+        }
+    })
+}
+talentService.delete = async (id) => {
+    return models.Talent.destroy({
+        where: {
+            id: id
+        }
+    })
+}
+talentService.login = async (data) => {
+    return models.Talent.findOne({
+        where: {
+            email: data.email,
+            password: data.password
+        }
+    })
+}
 
 module.exports = talentService
