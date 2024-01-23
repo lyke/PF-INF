@@ -6,6 +6,7 @@
 
 const db = require('../configs/postgresql')
 const models = require("../database/models")
+const talent = require('../database/models/talent')
 
 const talentService = {}
 
@@ -17,6 +18,13 @@ talentService.getAll = async () => {
         order: [
             ['id', 'ASC'],
         ],
+    })
+}
+talentService.getById = async (id) => {
+    return models.Talent.findOne({
+        where: {
+            id: id
+        }
     })
 }
 
