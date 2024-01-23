@@ -29,5 +29,16 @@ talentController.getAll = async (req, res) => {
             })
         })
 }
+talentController.getById = async (req, res) => {
+    talentService.getById(req.params.id)
+        .then(data => {
+            res.json(data)
+        })
+        .catch(err => {
+            res.status(404).send({
+                message: err.message || 'Some error occurred while retrieving data.'
+            })
+        })
+}
 
 module.exports = talentController
