@@ -27,5 +27,8 @@ talentService.getById = async (id) => {
         }
     })
 }
+talentService.create = async (data) => {
+    return models.Talent.create(data)
+}
 
 module.exports = talentService
