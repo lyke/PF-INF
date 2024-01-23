@@ -22,5 +22,6 @@ const talentController = require('../controllers/talentController')
 // router.get('/posts', postController.getAll)
 
 router.get('/talents', talentController.getAll)
+router.get('/talents/:id', talentController.getById)
 
 module.exports = router
