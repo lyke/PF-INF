@@ -23,5 +23,6 @@ const talentController = require('../controllers/talentController')
 
 router.get('/talents', talentController.getAll)
 router.get('/talents/:id', talentController.getById)
+router.post('/talents', talentController.create)
 
 module.exports = router
