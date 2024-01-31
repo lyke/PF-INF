@@ -1,4 +1,4 @@
-function loginPage() {
+function LoginPage() {
   return (
     <div>
       <h1>Login Page</h1>
@@ -14,4 +14,4 @@ function loginPage() {
     </div>
   );
 }
-export default loginPage;
+export default LoginPage;
