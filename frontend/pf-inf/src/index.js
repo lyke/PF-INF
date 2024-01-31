@@ -2,16 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import loginPage from './screens/loginPage';
+import LoginPage from './screens/LoginPage';
 import reportWebVitals from './reportWebVitals';
+// import { Route, Navlink, HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    {loginPage()}
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
-  
+
 );
 
 // If you want to start measuring performance in your app, pass a function
