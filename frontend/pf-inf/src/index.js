@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import LoginPage from './screens/LoginPage';
+import LoginPage from './screens/loginPage';
 import reportWebVitals from './reportWebVitals';
 // import { Route, Navlink, HashRouter } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
