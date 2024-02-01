@@ -1,6 +1,8 @@
-function LoginPage() {
+import Navbar from "../components/navbar";
+export default function LoginPage() {
   return (
     <div>
+      <Navbar />
       <h1>Login Page</h1>
       <form>
         <label for="username">Username:</label>
@@ -14,4 +16,3 @@ function LoginPage() {
     </div>
   );
 }
-export default LoginPage;
