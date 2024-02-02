@@ -1,8 +1,14 @@
 
 export default function Navbar() {
+  // définir une fonction qui permet de renvoyer vers le composant App.js
+  const redirectToHome = () => {
+    window.location.href = '/';
+  };
+
   return (
     <div className='nav-container'>
-      <button>Home</button>
+      <button onClick={redirectToHome}>Home</button>
+      {/* <button><a href="/">Home</a></button> */}
       <button>Talents</button>
         <ul style={{ display: 'none' }}>
           <li><button>Instagram</button></li>

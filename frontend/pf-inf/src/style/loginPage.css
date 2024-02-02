@@ -1,0 +1,48 @@
+.nav-container {
+  width: auto;
+  height: 8vh;
+  background-color: rgb(48, 100, 137);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3vh 2.5vw 0.3vh 2.5vw;
+}
+
+.nav-container button {
+  width: max-content;
+  height: 100%;
+  background-color: rgb(48, 100, 137);
+  border: none;
+  outline: none;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.login-container {
+  width: 100vw;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container h1 {
+  background-color: rgb(69, 153, 213);
+  border-radius: 5px;
+  padding: 2vh;
+  color: white;
+}
+
+.login-form {
+  width: 30vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(48, 100, 137);
+  border-radius: 5px;
+  color: white;
+}
