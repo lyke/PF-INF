@@ -19,5 +19,25 @@ postService.getAll = async () => {
         ],
     })
 }
+postService.getById = async (id) => {
+    return models.Post.findByPk(id)
+}
+postService.create = async (data) => {
+    return models.Post.create(data)
+}
+postService.update = async (id, data) => {
+    return models.Post.update(data, {
+        where: {
+            id: id
+        }
+    })
+}
+postService.delete = async (id) => {
+    return models.Post.destroy({
+        where: {
+            id: id
+        }
+    })
+}
 
 module.exports = postService
