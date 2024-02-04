@@ -1,4 +1,5 @@
-@import "./style/homePage.css";
+@import "./style/navbar.css";
+@import "./style/loginPage.css";
 .App {
   text-align: center;
 }
