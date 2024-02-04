@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import LoginPage from './screens/loginPage';
+import HomePage from './screens/homePage';
+import TalentIndexPage from './screens/talentIndexPage';
 import reportWebVitals from './reportWebVitals';
 // import { Route, Navlink, HashRouter } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -14,6 +16,8 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/talents" element={<TalentIndexPage />} />
       </Routes>
     </Router>
   </React.StrictMode>

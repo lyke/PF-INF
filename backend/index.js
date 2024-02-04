@@ -18,7 +18,7 @@ require('dotenv').config()
 const createError = require('http-errors')
 const express = require('express')
 const path = require('path')
-const PORT = 3000;
+const PORT = 5000;
 var router = require('./routes/indexRouter')
 const message = require('./database/models/message')
 
