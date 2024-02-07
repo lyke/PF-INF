@@ -21,9 +21,12 @@ const path = require('path')
 const PORT = 5000;
 var router = require('./routes/indexRouter')
 const message = require('./database/models/message')
+const cors = require('cors')
 
 
 const app = express()
+
+app.use(cors({ origin: 'http://localhost:3000'}))
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))

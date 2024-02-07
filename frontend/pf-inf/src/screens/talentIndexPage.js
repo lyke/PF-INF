@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from "../components/navbar";
+import axios from 'axios';
 
 export default function TalentIndexPage() {
-  const [talents, setTalents] = useState([]);
 
+  // Appel à API avec Axios
+  const [talents, setTalents] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/talents')
-      .then(response => response.json())
-      .then(data => setTalents(data));
+    axios.get('http://localhost:5000/api/talents')
+      .then(response => {
+        console.log(response.data);
+        setTalents(response.data.rows);
+        });
   }, []);
 
   return (
