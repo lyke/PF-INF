@@ -21,7 +21,7 @@ export default function LoginPage() {
   //       // sinon, afficher un message d'erreur
 
   //     });
-  }
+  // }
   return (
     <div>
       <Navbar />
