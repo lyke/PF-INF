@@ -1,22 +1,22 @@
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
     <div className='nav-container'>
-      <button>Home</button>
-      <button>Talents</button>
-        <ul style={{ display: 'none' }}>
-          <li><button>Instagram</button></li>
-          <li><button>TikTok</button></li>
-          <li><button>Youtube</button></li>
-          <li><button>Facebook</button></li>
-          <li><button>Snapchat</button></li>
-          <li><button>X</button></li>
-          <li><button>LinkedIn</button></li>
-
-        </ul>
-      <button>Contact</button>
-      <button>Connection</button>
-      <button>Inscription</button>
+      <Link to='/home'>Home</Link>
+      <Link to='/talents'>Talents</Link>
+      <ul style={{ display: 'none' }}>
+        <li><Link to='/instagram'>Instagram</Link></li>
+        <li><Link to='/tiktok'>TikTok</Link></li>
+        <li><Link to='/youtube'>Youtube</Link></li>
+        <li><Link to='/facebook'>Facebook</Link></li>
+        <li><Link to='/snapchat'>Snapchat</Link></li>
+        <li><Link to='/x'>X</Link></li>
+        <li><Link to='/linkedin'>LinkedIn</Link></li>
+      </ul>
+      <Link to='/contact'>Contact</Link>
+      <Link to='/connection'>Connection</Link>
+      <Link to='/inscription'>Inscription</Link>
     </div>
   );
 }
