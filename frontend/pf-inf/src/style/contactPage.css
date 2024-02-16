@@ -1,0 +1,28 @@
+.contact-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+.contact-form {
+  width: 100vw;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-message-input {
+  width: 50vw;
+  height: 10vh;
+  margin: 1vh 0 1vh 0;
+  padding: 1vh;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.5vw;
+}
