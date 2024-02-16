@@ -15,8 +15,8 @@ export default function Navbar() {
         <li><Link to='/linkedin'>LinkedIn</Link></li>
       </ul>
       <Link to='/contact'>Contact</Link>
-      <Link to='/connection'>Connection</Link>
-      <Link to='/inscription'>Inscription</Link>
+      <Link to='/login'>Connection</Link>
+      <Link to='/signin'>Inscription</Link>
     </div>
   );
 }

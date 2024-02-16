@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar";
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-export default function LoginPage() {
+export default function ContactPage() {
 
   // definir la fonction qui va gérer la connexion en vérifiant si le username et le password sont corrects
   // si oui, rediriger vers la page d'accueil
@@ -25,16 +25,22 @@ export default function LoginPage() {
   return (
     <div>
       <Navbar />
-      <div className='login-container' >
-        <h1>Login Page</h1>
-        <form className='login-form' >
-          <label htmlFor="username">Username:</label>
-          <input type="text" id="username" name="username" />
+      <div className='contact-container' >
+        <h1>Contact Page</h1>
+        <form className='contact-form' >
+          <label htmlFor="name">Name:</label>
+          <input type="text" id="name" name="name" />
           <br />
-          <label htmlFor="password">Password:</label>
-          <input type="password" id="password" name="password" />
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" name="email" />
           <br />
-          <button type="submit">Login</button>
+          <label htmlFor="object">Object:</label>
+          <input type="text" id="object" name="object" />
+          <br />
+          <label htmlFor="message">Message:</label>
+          <input className="contact-message-input" type="text" id="message" name="message" />
+          <br />
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>

@@ -28,28 +28,28 @@ export default function SignInPage() {
       <div className='login-container' >
         <h1>Sign In Page</h1>
         <form className='login-form' >
-          <label for="firstName">First Name:</label>
+          <label htmlFor="firstName">First Name:</label>
           <input type="text" id="firstName" name="firstName" />
           <br />
-          <label for="lastName">Last Name:</label>
+          <label htmlFor="lastName">Last Name:</label>
           <input type="text" id="lastName" name="lastName" />
           <br />
-          <label for="email">Email:</label>
+          <label htmlFor="email">Email:</label>
           <input type="text" id="email" name="email" />
           <br />
-          <label for="username">Username:</label>
+          <label htmlFor="username">Username:</label>
           <input type="text" id="username" name="username" />
           <br />
-          <label for="description">Description:</label>
+          <label htmlFor="description">Description:</label>
           <input type="text" id="description" name="description" />
           <br />
-          <label for="picture">Picture:</label>
+          <label htmlFor="picture">Picture:</label>
           <input type="text" id="picture" name="picture" />
           <br />
-          <label for="phone">Phone:</label>
+          <label htmlFor="phone">Phone:</label>
           <input type="text" id="phone" name="phone" />
           <br />
-          <label for="password">Password:</label>
+          <label htmlFor="password">Password:</label>
           <input type="password" id="password" name="password" />
           <br />
           <button type="submit">Login</button>
