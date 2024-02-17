@@ -8,6 +8,7 @@ import TalentIndexPage from './screens/talentIndexPage';
 import SignInPage from './screens/signInPage';
 import reportWebVitals from './reportWebVitals';
 import ContactPage from './screens/contactPage';
+import TalentShowPage from './screens/talentShowPage';
 // import { Route, Navlink, HashRouter } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -21,7 +22,8 @@ root.render(
         <Route path="/home" element={<HomePage />} />
         <Route path="/talents" element={<TalentIndexPage />} />
         <Route path="/signin" element={<SignInPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/talents/:id" element={<TalentShowPage />} />
+        <Route path="/talents/:id/contact" element={<ContactPage />} />
       </Routes>
     </Router>
   </React.StrictMode>
